@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Ibrahim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+
+<!-- HERO -->
+<header class="navbar">
+
+  <div class="logo">Ahmed Ibrahim</div>
+
+  <!-- HAMBURGER -->
+ <div class="hamburger" onclick="toggleMenu(this)">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+  <!-- NAV MENU -->
+  <nav class="nav-links" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+
+    <!-- MOBILE ONLY ITEMS -->
+    <a href="https://www.linkedin.com/in/ahmed-ibrahim-b5865b402" target="_blank" class="mobile-only">
+      LinkedIn
+    </a>
+
+    <a href="assets/Ahmed_Ibrahim_CV.pdf" download class="resume-btn mobile-only">
+      Download CV
+    </a>
+  </nav>
+
+  <!-- DESKTOP ONLY -->
+  <div class="nav-right">
+    <a href="https://www.linkedin.com/in/ahmed-ibrahim-b5865b402" target="_blank">LinkedIn</a>
+    <a href="assets/Ahmed_Ibrahim_CV.pdf" download class="resume-btn">Download CV</a>
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-container">
+
+    <!-- TEXT -->
+    <div class="hero-text">
+      <h4>Hi, I'm</h4>
+      <h1><span>Ahmed Ibrahim</span></h1>
+      <h3>Digital Marketing & Web Solutions Specialist</h3>
+
+      <p>
+        I help businesses increase visibility, generate leads, and improve online performance 
+        using data-driven marketing strategies, SEO, and modern web development.
+      </p>
+
+      <a href="#" class="btn">View My Work</a>
+    </div>
+
+    <!-- IMAGE + ORBIT -->
+    <div class="orbit-wrapper">
+
+      <div class="orbit" id="orbit">
+        <span>SEO</span>
+        <span>WEB</span>
+        <span>ADS</span>
+        <span>DATA</span>
+      </div>
+
+      <img src="images/profile.jpeg" alt="Ahmed Ibrahim">
+
+    </div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

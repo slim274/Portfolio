@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Ahmed Ibrahim</title>
+
+  <!-- GLOBAL -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- PAGE -->
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+<!-- NAVBAR (from style.css) -->
+<header class="navbar">
+
+  <div class="logo">Ahmed Ibrahim</div>
+
+  <div class="hamburger" onclick="toggleMenu(this)">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="nav-links" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="contact.html">Contact</a>
+
+    <a href="https://www.linkedin.com/in/ahmed-ibrahim-b5865b402" target="_blank" class="mobile-only">LinkedIn</a>
+    <a href="assets/Ahmed_Ibrahim_CV.pdf" download class="resume-btn mobile-only">Download CV</a>
+  </nav>
+
+  <div class="nav-right">
+    <a href="https://www.linkedin.com/in/ahmed-ibrahim-b5865b402" target="_blank">LinkedIn</a>
+    <a href="assets/Ahmed_Ibrahim_CV.pdf" download class="resume-btn">Download CV</a>
+  </div>
+
+</header>
+
+<!-- PROJECT SECTION -->
+<section class="projects">
+
+  <h2>Selected Projects & Client Work</h2>
+
+  <p class="project-intro">
+    These projects showcase my ability to solve real-world business challenges using digital marketing,
+    SEO, content strategy, and web development.
+  </p>
+
+  <!-- PROJECT 1 -->
+  <div class="project-row">
+    <img src="images/swiftdrop.png" alt="SwiftDrop">
+
+    <div class="project-content">
+      <h3>SwiftDrop Abuja Marketing Strategy</h3>
+
+      <p>
+        Developed a full digital marketing strategy for a logistics startup,
+        focusing on trust, visibility, and customer conversion.
+      </p>
+
+      <div class="stack">
+        <span>Marketing Strategy</span>
+        <span>Paid Ads</span>
+        <span>Customer Research</span>
+        <span>Conversion Optimization</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="project-row">
+    <img src="images/wonder.png" alt="Wonderbuild">
+
+    <div class="project-content">
+      <h3>Wonderbuild Digital Strategy</h3>
+
+      <p>
+        Created a digital marketing strategy focused on lead generation,
+        brand positioning, and thought leadership.
+      </p>
+
+      <div class="stack">
+        <span>Content Strategy</span>
+        <span>Lead Generation</span>
+        <span>Branding</span>
+        <span>B2B Marketing</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="project-row">
+    <img src="images/cjr.png" alt="Fashion Campaign">
+
+    <div class="project-content">
+      <h3>Fashion Brand Campaign</h3>
+
+      <p>
+        Developed a complete social media campaign including content planning,
+        ads strategy, KPIs, and performance tracking.
+      </p>
+
+      <div class="stack">
+        <span>Social Media</span>
+        <span>Ads Campaign</span>
+        <span>Content Planning</span>
+        <span>KPI Tracking</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 4 -->
+ <div class="project-row">
+  <img src="images/tolbert.png" alt="Tolbert Specialist Hospital">
+
+  <div class="project-content">
+    <a href="https://tolbertspecialisthospital.com" target="_blank" class="project-link">
+      <h3>Hospital Website Optimization ↗</h3>
+    </a>
+
+    <p>
+      Managed and optimized the hospital website, improving user experience,
+      SEO performance, and accessibility. Implemented content optimization and
+      performance improvements to enhance engagement.
+    </p>
+
+    <div class="stack">
+      <span>Web Development</span>
+      <span>SEO</span>
+      <span>Performance Optimization</span>
+      <span>Content Management</span>
+    </div>
+  </div>
+</div>
+
+  <!-- PROJECT 5 (REAL SITE) -->
+  <div class="project-row">
+    <img src="images/estate.png" alt="Real Estate Website">
+
+    <div class="project-content">
+      <a href="https://govershelter.com/" target="_blank" class="project-link">
+        <h3>Real Estate Website Development ↗</h3>
+      </a>
+
+      <p>
+        Designed and developed a responsive real estate website with SEO optimization,
+        improving user experience and online visibility.
+      </p>
+
+      <div class="stack">
+        <span>Web Development</span>
+        <span>SEO</span>
+        <span>UI/UX</span>
+        <span>Performance</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- SCRIPT -->
+<script>
+function toggleMenu(icon) {
+  icon.classList.toggle("active");
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* ================= ABOUT ================= */
+.about {
+  padding: 80px 40px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.about-image img {
+  width: 250px;
+  border-radius: 20px;
+}
+
+/* ================= EXPERIENCE + EDUCATION ================= */
+.exp-edu-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+  position: relative;
+}
+
+/* VERTICAL LINE */
+.exp-edu-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #00ffd5, transparent);
+  transform: translateX(-50%);
+}
+
+/* BOXES */
+.exp-box,
+.edu-box {
+  flex: 1;
+  padding: 30px;
+}
+
+/* EXPERIENCE */
+.exp-item {
+  margin-bottom: 35px;
+}
+
+.exp-item span {
+  display: block;
+  font-size: 13px;
+  color: #00ffd5;
+  margin-bottom: 10px;
+}
+
+.exp-item p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.exp-item h3 {
+  margin-bottom: 6px;
+}
+
+
+/* EDUCATION */
+.edu-box p {
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 180px;
+  }
+
+ 
+  .exp-edu-container {
+    flex-direction: column;
+    gap: 40px; /* space between Experience & Education */
+    padding: 40px 20px;
+  }
+ .exp-box,
+  .edu-box {
+    padding: 0; /* remove heavy padding */
+  }
+ .exp-box h2,
+  .edu-box h2 {
+    margin-bottom: 20px;
+  }
+
+
+  .exp-edu-container::before {
+    display: none;
+  }
+}
+

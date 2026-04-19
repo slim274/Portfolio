@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Ahmed Ibrahim</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+
+  <div class="logo">Ahmed Ibrahim</div>
+
+  <div class="hamburger" onclick="toggleMenu(this)">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="nav-links" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
+
+    <!-- MOBILE ONLY -->
+    <a href="https://www.linkedin.com/in/ahmed-ibrahim-b5865b402" target="_blank" class="mobile-only">LinkedIn</a>
+    <a href="assets/Ahmed_Ibrahim_CV.pdf" download class="resume-btn mobile-only">Download CV</a>
+  </nav>
+
+  <div class="nav-right">
+    <a href="https://www.linkedin.com/in/ahmed-ibrahim-b5865b402" target="_blank">LinkedIn</a>
+    <a href="assets/Ahmed_Ibrahim_CV.pdf" download class="resume-btn">Download CV</a>
+  </div>
+
+</header>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact">
+
+  <div class="contact-container">
+
+    <!-- LEFT -->
+    <div class="contact-left">
+      <h2>Contact Me</h2>
+
+      <p>
+        I'm open to freelance projects, collaborations, and full-time opportunities.
+        Let’s work together to build something impactful.
+      </p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> ahmedabiodunibrahim@gmail.com</p>
+        <p><strong>Phone:</strong> +234 916 450 5150</p>
+        <p><strong>Location:</strong> Abuja, Nigeria</p>
+      </div>
+
+      <a href="assets/Ahmed_Ibrahim_CV.pdf" download class="resume-btn">
+        Download CV
+      </a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="contact-right">
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+        <p id="status"></p>
+      </form>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= EMAILJS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("YOUR_PUBLIC_KEY"); // replace
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const status = document.getElementById("status");
+  status.innerText = "Sending...";
+
+  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+    .then(function() {
+      status.innerText = "✅ Message sent!";
+    }, function(error) {
+      status.innerText = "❌ Failed. Try again.";
+      console.log(error);
+    });
+});
+
+/* NAV */
+function toggleMenu(icon) {
+  icon.classList.toggle("active");
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b0f19;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* LOGO */
+.logo {
+  font-weight: bold;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+.resume-btn {
+  background: #00ffd5;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+/* TEXT */
+.hero-text {
+  max-width: 400px;
+}
+
+.hero-text span {
+  color: #00ffd5;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00ffd5;
+  color: black;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* ORBIT */
+.orbit-wrapper {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.orbit-wrapper img {
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.orbit {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: rotate 12s linear infinite;
+}
+
+.orbit span {
+  position: absolute;
+  color: #00ffd5;
+  border: 1px solid #00ffd5;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* POSITIONS */
+.orbit span:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, -50%); }
+.orbit span:nth-child(2) { top: 50%; left: 0; transform: translate(-50%, -50%); }
+.orbit span:nth-child(3) { bottom: 0; left: 50%; transform: translate(-50%, 50%); }
+.orbit span:nth-child(4) { top: 50%; right: 0; transform: translate(50%, -50%); }
+
+/* ROTATE */
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,113 @@
+.contact {
+  padding: 120px 20px 60px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT */
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h2 {
+  margin-bottom: 15px;
+}
+
+.contact-left p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.contact-info {
+  margin: 20px 0;
+}
+
+.contact-info p {
+  margin: 6px 0;
+}
+
+/* BUTTON (NO UNDERLINE) */
+.resume-btn {
+  background: #00ffd5;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.resume-btn:hover {
+  opacity: 0.9;
+}
+
+/* RIGHT */
+.contact-right {
+  flex: 1;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 12px;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* BUTTON */
+button {
+  background: #00ffd5;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* STATUS */
+#status {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.resume-btn.mobile-only{
+    display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+.resume-btn.mobile-only{
+    display: block;
+}
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+}
